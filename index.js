@@ -372,8 +372,18 @@ $(document).ready(function(){
        })    
          
   })
+    
+    // Click media query //
 
-  // Order success //
+  var mediaQuery = window.matchMedia('(max-width: 420px)')
+  if(mediaQuery.matches){
+
+    $(document).on('click','.image_wrapper img',function()
+    {
+      $(window).scrollTop(20)
+    })
+    
+  }
 
     
       
